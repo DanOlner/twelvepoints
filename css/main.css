@@ -1,0 +1,25 @@
+line.future {
+    stroke: LightGrey;
+    stroke-width: 2
+}
+
+line.now {
+    stroke: Orange;
+    stroke-width: 7
+}
+
+line.yes {
+    stroke: LimeGreen;
+    stroke-width: 4
+}
+
+line.no {
+    stroke: Red;
+    stroke-width: 4
+}
+
+circle {
+    fill: black;
+    stroke: none
+}
+

@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(echo \"npm: $\\(npm --version 2>/dev/null || echo 'none'\\)\")",
+      "Bash(npx --no-install playwright --version)",
+      "Bash(echo \"npx playwright: $\\(npx --no-install playwright --version 2>/dev/null || echo 'not installed'\\)\")",
+      "Bash(npm install *)",
+      "Bash(npm test *)",
+      "Bash(perl -0pi -e 's/\\\\} else if \\\\\\(new Date\\\\\\(d\\\\.month\\\\\\)\\\\.getFullYear\\\\\\(\\\\\\) == new Date\\\\\\(\\\\\\)\\\\.getFullYear\\\\\\(\\\\\\)\\\\s*\\\\n\\\\s*&& new Date\\\\\\(d\\\\.month\\\\\\)\\\\.getMonth\\\\\\(\\\\\\) == new Date\\\\\\(\\\\\\)\\\\.getMonth\\\\\\(\\\\\\)\\\\\\) \\\\{/} else if \\(new Date\\(d.month\\).getMonth\\(\\) == new Date\\(\\).getMonth\\(\\)\\) {/' js/twelvepoints.js)"
+    ]
+  }
+}

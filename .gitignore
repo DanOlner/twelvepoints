@@ -4,3 +4,4 @@
 test*
 *xlsx*
 /nbproject
+node_modules/

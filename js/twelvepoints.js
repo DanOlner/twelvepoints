@@ -55,8 +55,9 @@ d3.csv('twelvepoints.csv', function (err, csv) {
                             //Start with status from CSV, so that 'yes' overrides date and we can complete a full circle
                             if(d.status == 'yes'){
                               return d.status
-                            //Otherwise, if it's the current month...
-                            } else if (new Date(d.month).getMonth() == new Date().getMonth()) {
+                            //Otherwise, if it's the current month (same year and month)...
+                            } else if (new Date(d.month).getFullYear() == new Date().getFullYear()
+                                       && new Date(d.month).getMonth() == new Date().getMonth()) {
                                 return("now")
                                 //If date hasn't passed...
                             } else if (adjustDate > new Date()) {
